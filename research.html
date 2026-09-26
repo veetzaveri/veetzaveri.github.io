@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Selected research projects by Veet Zaveri.">
+  <title>Research | Veet Zaveri</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">Veet Zaveri</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="research.html" aria-current="page">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="experience.html">Experience</a>
+      <a href="Veet_Zaveri_Resume.pdf">Resume</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">Research</p>
+    <h1>Selected projects</h1>
+    <p>
+      My work focuses on machine learning systems that are evaluated for robustness,
+      generalization, and practical usefulness rather than only in-distribution performance.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <article class="project" id="icp">
+      <div class="project-layout">
+        <div>
+          <p class="eyebrow">Medical AI</p>
+          <h2>Non-invasive intracranial pressure waveform estimation</h2>
+          <div class="meta">
+            <span class="tag">GRU</span>
+            <span class="tag">Encoder–Decoder</span>
+            <span class="tag">Multimodal</span>
+            <span class="tag">External Validation</span>
+          </div>
+        </div>
+        <div class="project-copy">
+          <p>
+            This collaborative project studies whether continuous intracranial pressure
+            waveforms can be estimated from routinely measured physiological signals.
+            The work combines signal processing, deep learning, and cross-site validation.
+          </p>
+          <ul>
+            <li>Developed and evaluated recurrent and multiscale encoder–decoder models.</li>
+            <li>Studied ECG-, PPG-, and multimodal signal configurations.</li>
+            <li>Used patient-level evaluation to reduce leakage between training and validation data.</li>
+            <li>Evaluated model generalization across independent clinical datasets without fine-tuning.</li>
+            <li>Explored waveform-aware objectives and morphology-sensitive evaluation.</li>
+          </ul>
+          <a class="inline-link" href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_ICP_FORK_NAME">
+            View code on GitHub →
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project" id="remote-sensing">
+      <div class="project-layout">
+        <div>
+          <p class="eyebrow">Adversarial ML</p>
+          <h2>Adversarial machine learning for Earth observation</h2>
+        </div>
+        <div class="project-copy">
+          <p>
+            Published research examining adversarial robustness in remote-sensing imagery.
+            The project developed my interest in model reliability, failure modes, and
+            rigorous evaluation under intentional perturbations.
+          </p>
+          <ul>
+            <li>Designed experiments to measure adversarial vulnerability.</li>
+            <li>Compared model behavior across attack and evaluation settings.</li>
+            <li>Connected empirical robustness results to practical remote-sensing use cases.</li>
+          </ul>
+          <a class="inline-link" href="publications.html">See publication →</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project" id="domain-aware">
+      <div class="project-layout">
+        <div>
+          <p class="eyebrow">Optimization</p>
+          <h2>Domain-aware model selection and optimization</h2>
+        </div>
+        <div class="project-copy">
+          <p>
+            Ongoing empirical work exploring how optimization and hyperparameter selection
+            can account for performance variation across multiple source domains rather than
+            optimizing only a pooled average.
+          </p>
+          <ul>
+            <li>Compare source-domain-aware objective functions for model selection.</li>
+            <li>Study whether source-domain performance statistics predict unseen-domain robustness.</li>
+            <li>Evaluate optimization methods under distribution shift.</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <article class="project" id="motion-planning">
+      <div class="project-layout">
+        <div>
+          <p class="eyebrow">Algorithms</p>
+          <h2>Motion planning and topology</h2>
+        </div>
+        <div class="project-copy">
+          <p>
+            Research experience in topology-aware motion planning, with an emphasis on
+            algorithm design, experimental analysis, and reasoning about difficult search spaces.
+          </p>
+          <ul>
+            <li>Worked on a PUMP-related motion-planning research project.</li>
+            <li>Studied the relationship between topology and planning behavior.</li>
+            <li>Developed research habits that now inform my ML work: controlled experiments,
+                ablation-style reasoning, and careful interpretation of negative results.</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-row">
+    <span>© 2026 Veet Zaveri</span>
+    <span>
+      <a href="https://github.com/YOUR_GITHUB_USERNAME">GitHub</a>
+      ·
+      <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_SLUG/">LinkedIn</a>
+      ·
+      <a href="mailto:YOUR_EMAIL">Email</a>
+    </span>
+  </div>
+</footer>
+
+</body>
+</html>
