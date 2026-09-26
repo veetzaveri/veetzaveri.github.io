@@ -152,6 +152,16 @@ a { color: inherit; }
   font-size: 1.05rem;
 }
 
+.section-heading.contact-heading {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.section-heading.contact-heading p {
+  margin: 0;
+  align-self: center;
+}
+
 .engineering-heading {
   grid-template-columns: 1fr 1fr;
 }
