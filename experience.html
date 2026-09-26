@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Research, leadership, and education experience for Veet Zaveri.">
+  <meta name="description" content="Research, engineering, leadership, education, and technical skills for Veet Zaveri.">
   <title>Experience | Veet Zaveri</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -17,7 +17,7 @@
       <a href="research.html">Research</a>
       <a href="publications.html">Publications</a>
       <a href="experience.html" aria-current="page">Experience</a>
-      <a href="Veet_Zaveri_Resume.pdf">Resume</a>
+      <a href="Veet_Zaveri_Resume.pdf" target="_blank" rel="noopener">Resume</a>
     </nav>
   </div>
 </header>
@@ -27,50 +27,97 @@
 <section class="page-hero">
   <div class="container">
     <p class="eyebrow">Experience</p>
-    <h1>Research & leadership</h1>
+    <h1>Research, engineering & education</h1>
     <p>
-      A concise view of the roles and experiences that shape my research interests.
-      You can make this page more detailed than the one-page resume without overwhelming the homepage.
+      Research and engineering experience across machine learning, data systems,
+      computational medicine, software engineering, and research leadership.
     </p>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
+    <h2>Research & engineering experience</h2>
     <div class="timeline">
 
       <article class="timeline-item">
-        <p class="eyebrow">Research Leadership</p>
+        <p class="eyebrow">Jan. 2024 – Present</p>
+        <h3>Research Associate (CS Researcher / Data Scientist)</h3>
+        <div class="where">Institute for Defense Analyses · Alexandria, VA</div>
+        <ul>
+          <li>Trained and evaluated 20+ CNN and Transformer architectures for detecting adversarial and generative manipulation of satellite imagery, analyzing domain shift, unseen attack variants, and low-prevalence screening; published the findings as first author in <em>Remote Sensing</em>.</li>
+          <li>Developed a machine-learning-powered, parallelized Python acquisition and cleaning pipeline that processed 21M+ records, increased ingestion throughput by 50×, and supported 50+ analytical products; received IDA’s highest-tier 3-Star Analysis Award for the six-month award cycle.</li>
+          <li>Built and deployed an automated data pipeline and Streamlit application covering 26K+ records across multiple sources, with automated weekly refreshes and adoption by sponsors and 20+ internal users.</li>
+          <li>Evaluated and integrated frontier LLMs through AWS Bedrock; achieved 90%+ parameter-extraction accuracy on 30+ documents while reducing hallucination rate below 5%, and applied LLMs to clean and classify 10K+ address records.</li>
+          <li>Built a semantic document-analysis system over 500+ contracts using sentence-transformer embeddings and cosine similarity, reducing manual analysis by 50+ hours.</li>
+          <li>Built an NLP application that classifies 300+ article titles daily and generates summaries using ktrain and txtai, reducing manual literature-monitoring workloads by 20+ hours per week.</li>
+          <li>Clustered and linked 2,000+ entity names across heterogeneous datasets using TF-IDF n-grams, sentence-transformer embeddings, and topic modeling.</li>
+          <li>Engineered and optimized 10+ TB of SQL infrastructure on Linux, improving retrieval throughput from approximately 10K to 200K records per day.</li>
+        </ul>
+      </article>
+
+      <article class="timeline-item">
+        <p class="eyebrow">Aug. 2024 – Present</p>
+        <h3>Graduate Deep Learning Researcher</h3>
+        <div class="where">LCICM – Johns Hopkins University · Remote</div>
+        <ul>
+          <li>Co-first-authored a study of noninvasive intracranial-pressure waveform reconstruction across 158 adult patients and approximately 5,322 hours of waveform data, sharing responsibility for methodology, software, analysis, data curation, visualization, and manuscript preparation.</li>
+          <li>Developed and evaluated LSTM, GRU, multiscale V-Net, TCN, and Transformer-based models for continuous ICP reconstruction from ABP, PPG, and ECG, including early- and late-fusion strategies and waveform-aware objectives.</li>
+          <li>Conducted independent cross-institutional validation from a 47-patient internal cohort to a 111-patient external cohort; performance across five architectures ranged from 4.276–4.946 mmHg MAE and 0.599–0.722 Pearson correlation.</li>
+          <li>Built an end-to-end physiological signal-processing pipeline for waveform synchronization, 30-second prediction windows, 125 Hz resampling, and automated signal-quality filtering.</li>
+        </ul>
+      </article>
+
+      <article class="timeline-item">
+        <p class="eyebrow">Sep. 2026 – Present</p>
         <h3>Lab Director</h3>
-        <div class="where">Laboratory for Computational Intensive Care Medicine (LCICM), Johns Hopkins</div>
-        <div class="when">2026 – Present</div>
-        <p>
-          Support research coordination across computational medicine projects,
-          including project meetings, research reviews, mentorship, and lab operations.
-        </p>
+        <div class="where">LCICM – Johns Hopkins University · Remote</div>
+        <ul>
+          <li>Help supervise 5 active research projects involving 11 students, providing guidance on research planning, technical challenges, project execution, and next-step prioritization.</li>
+          <li>Coordinate weekly laboratory meetings and project reviews for an interdisciplinary computational critical-care research group.</li>
+          <li>Support research administration, IRB-related coordination, and broader laboratory operations under Principal Investigator Robert D. Stevens.</li>
+        </ul>
       </article>
 
       <article class="timeline-item">
-        <p class="eyebrow">Current Full-Time Role</p>
-        <h3>YOUR_JOB_TITLE</h3>
-        <div class="where">YOUR_ORGANIZATION</div>
-        <div class="when">2023 – Present</div>
-        <p>
-          Replace this paragraph with a public-safe version of your current role.
-          Focus on research, technical problem-solving, modeling, data analysis,
-          or engineering responsibilities that you are comfortable sharing publicly.
-        </p>
+        <p class="eyebrow">Jul. 2023 – Dec. 2023</p>
+        <h3>IT Software Engineer Intern</h3>
+        <div class="where">Mayo Clinic · Remote</div>
+        <ul>
+          <li>Contributed to development and internal deployment of a specimen-tracking application using TypeScript, React, HTML, and CSS as part of an Agile Scrum engineering team.</li>
+          <li>Evaluated Next.js, Vite, and other front-end technologies to guide architecture and technology selection.</li>
+          <li>Integrated the Microsoft Graph API to retrieve and display authenticated user profile information and photos.</li>
+        </ul>
       </article>
 
       <article class="timeline-item">
-        <p class="eyebrow">Education</p>
-        <h3>M.S. in Computer Science</h3>
-        <div class="where">Johns Hopkins University</div>
-        <div class="when">Replace with dates</div>
-        <p>
-          Add a short line on relevant coursework, research, or concentration only if it
-          strengthens the story of your research profile.
-        </p>
+        <p class="eyebrow">Sep. 2022 – May 2023</p>
+        <h3>Software Engineer Intern / Software Architecture Team Lead</h3>
+        <div class="where">Astoria.ai · Remote</div>
+        <ul>
+          <li>Led the Software Architecture team in evaluating Redis, Kafka, Fluvio, and Hadoop for a talent-management platform aggregating and transforming 10M+ records.</li>
+          <li>Built RESTful ingestion and web-scraping services that collected and processed 100K+ job postings.</li>
+          <li>Applied regression, clustering, predictive modeling, and neural networks to candidate-matching pipelines and built full-stack features in Python, Java, JavaScript, HTML, and CSS.</li>
+        </ul>
+      </article>
+
+      <article class="timeline-item">
+        <p class="eyebrow">Jan. 2022 – Jun. 2023</p>
+        <h3>Topology Student Researcher</h3>
+        <div class="where">Wilbur Wright College · Chicago, IL</div>
+        <ul>
+          <li>Developed a topological approach to collision-free motion planning for two robots on a figure-eight track, proving topological complexity 3 and constructing an explicit algorithm with three continuous motion-planning instructions.</li>
+          <li>Co-first-authored “A Motion Planning Algorithm in a Figure Eight Track,” published in the <em>PUMP Journal of Undergraduate Research</em> in 2023.</li>
+        </ul>
+      </article>
+
+      <article class="timeline-item">
+        <p class="eyebrow">Jan. 2023 – May 2023</p>
+        <h3>Data Structures TA / Grader</h3>
+        <div class="where">Johns Hopkins University · Baltimore, MD</div>
+        <ul>
+          <li>Evaluated Java and Python coursework for 20+ students and provided individualized feedback on data structures, algorithms, debugging, and software-development practices.</li>
+        </ul>
       </article>
 
     </div>
@@ -78,13 +125,61 @@
 </section>
 
 <section class="section">
+  <div class="container">
+    <div class="section-heading">
+      <h2>Education</h2>
+      <p>Formal training in computer science and business management.</p>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <p class="eyebrow">Expected December 2027</p>
+        <h3>Johns Hopkins University</h3>
+        <p><strong>Master of Science in Computer Science</strong><br>Cumulative GPA: 4.00 · Baltimore, MD</p>
+      </article>
+      <article class="card">
+        <p class="eyebrow">June 2021</p>
+        <h3>DePaul University</h3>
+        <p><strong>Bachelor of Science in Business Management with Honors</strong><br>Cumulative GPA: 3.99/4.00 · Chicago, IL</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-heading">
+      <h2>Technical skills</h2>
+      <p>Tools and research areas used across my published research and engineering work.</p>
+    </div>
+    <div class="grid">
+      <article class="skill-group">
+        <h3>Programming</h3>
+        <p>Python, Java, TypeScript/JavaScript, SQL</p>
+      </article>
+      <article class="skill-group">
+        <h3>Machine Learning</h3>
+        <p>PyTorch, TensorFlow, Keras, scikit-learn, Sentence Transformers</p>
+      </article>
+      <article class="skill-group">
+        <h3>Research</h3>
+        <p>Deep learning, LLM evaluation, computer vision, multimodal learning, time-series modeling, adversarial robustness, distribution-shift analysis, representation learning</p>
+      </article>
+      <article class="skill-group">
+        <h3>Data & Systems</h3>
+        <p>Pandas, NumPy, SciPy, PostgreSQL, SQL Server, MongoDB, AWS, Git, Docker, Kafka, Redis, Linux</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
   <div class="container callout">
-    <p class="eyebrow">Research direction</p>
-    <h2>Reliable, generalizable machine learning.</h2>
-    <p>
-      My long-term interests include robust machine learning, distribution-shift evaluation,
-      multimodal learning, and rigorous assessment of modern AI systems.
-    </p>
+    <p class="eyebrow">Full résumé</p>
+    <h2>Download the PDF version.</h2>
+    <p>The linked public résumé contains the same detailed experience and education presented here.</p>
+    <div class="actions">
+      <a class="button" href="Veet_Zaveri_Resume.pdf" target="_blank" rel="noopener">Open résumé PDF</a>
+    </div>
   </div>
 </section>
 
@@ -92,13 +187,13 @@
 
 <footer class="footer">
   <div class="container footer-row">
-    <span>© 2026 Veet Zaveri</span>
+    <span>© 2026 Veet Zaveri · Alexandria, VA</span>
     <span>
-      <a href="https://github.com/YOUR_GITHUB_USERNAME">GitHub</a>
+      <a href="mailto:vzaveri1@jhu.edu">Email</a>
       ·
-      <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_SLUG/">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/veetzaveri/" target="_blank" rel="noopener">LinkedIn</a>
       ·
-      <a href="mailto:YOUR_EMAIL">Email</a>
+      <a href="https://github.com/veetzaveri" target="_blank" rel="noopener">GitHub</a>
     </span>
   </div>
 </footer>

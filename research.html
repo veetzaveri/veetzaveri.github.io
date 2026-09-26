@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Selected research projects by Veet Zaveri.">
+  <meta name="description" content="Research by Veet Zaveri in adversarial machine learning, clinical waveform reconstruction, multimodal deep learning, and motion planning.">
   <title>Research | Veet Zaveri</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -17,7 +17,7 @@
       <a href="research.html" aria-current="page">Research</a>
       <a href="publications.html">Publications</a>
       <a href="experience.html">Experience</a>
-      <a href="Veet_Zaveri_Resume.pdf">Resume</a>
+      <a href="Veet_Zaveri_Resume.pdf" target="_blank" rel="noopener">Resume</a>
     </nav>
   </div>
 </header>
@@ -29,8 +29,8 @@
     <p class="eyebrow">Research</p>
     <h1>Selected projects</h1>
     <p>
-      My work focuses on machine learning systems that are evaluated for robustness,
-      generalization, and practical usefulness rather than only in-distribution performance.
+      Projects spanning adversarial robustness, clinical deep learning, multimodal time-series modeling,
+      topology, and applied ML systems.
     </p>
   </div>
 </section>
@@ -38,77 +38,68 @@
 <section class="section">
   <div class="container">
 
-    <article class="project" id="icp">
+    <article class="project" id="geospatial">
       <div class="project-layout">
         <div>
-          <p class="eyebrow">Medical AI</p>
-          <h2>Non-invasive intracranial pressure waveform estimation</h2>
+          <p class="eyebrow">Adversarial ML · Remote Sensing</p>
+          <h2>Towards a Better Characterization of Adversarial Attacks in Geospatial Imagery</h2>
           <div class="meta">
-            <span class="tag">GRU</span>
-            <span class="tag">Encoder–Decoder</span>
-            <span class="tag">Multimodal</span>
-            <span class="tag">External Validation</span>
+            <span class="tag">Computer Vision</span>
+            <span class="tag">Adversarial Robustness</span>
+            <span class="tag">Domain Shift</span>
+            <span class="tag">Transformers</span>
           </div>
         </div>
         <div class="project-copy">
           <p>
-            This collaborative project studies whether continuous intracranial pressure
-            waveforms can be estimated from routinely measured physiological signals.
-            The work combines signal processing, deep learning, and cross-site validation.
+            First-author research investigating how adversarial and generative manipulation detectors
+            behave beyond a narrow in-distribution benchmark.
           </p>
           <ul>
-            <li>Developed and evaluated recurrent and multiscale encoder–decoder models.</li>
-            <li>Studied ECG-, PPG-, and multimodal signal configurations.</li>
-            <li>Used patient-level evaluation to reduce leakage between training and validation data.</li>
-            <li>Evaluated model generalization across independent clinical datasets without fine-tuning.</li>
-            <li>Explored waveform-aware objectives and morphology-sensitive evaluation.</li>
+            <li>Trained and systematically evaluated more than 20 CNN and Transformer architectures.</li>
+            <li>Studied robustness under adversarial attacks, domain shift, and previously unseen attack variants.</li>
+            <li>Evaluated low-prevalence screening to better characterize performance in operationally realistic settings.</li>
+            <li>Published the findings in <em>Remote Sensing</em> in 2026.</li>
           </ul>
-          <a class="inline-link" href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_ICP_FORK_NAME">
-            View code on GitHub →
-          </a>
+          <a class="inline-link" href="https://doi.org/10.3390/rs18122041" target="_blank" rel="noopener">Publication / DOI →</a>
+          <a class="inline-link" href="https://github.com/veetzaveri/geospatial-manipulation-detection" target="_blank" rel="noopener">Code →</a>
         </div>
       </div>
     </article>
 
-    <article class="project" id="remote-sensing">
+    <article class="project" id="icp">
       <div class="project-layout">
         <div>
-          <p class="eyebrow">Adversarial ML</p>
-          <h2>Adversarial machine learning for Earth observation</h2>
+          <p class="eyebrow">Medical AI · Clinical Waveforms</p>
+          <h2>Non-invasive Intracranial Pressure Waveform Reconstruction with Deep Learning</h2>
+          <div class="meta">
+            <span class="tag">LSTM / GRU</span>
+            <span class="tag">V-Net</span>
+            <span class="tag">TCN</span>
+            <span class="tag">Transformer</span>
+            <span class="tag">Multimodal Learning</span>
+          </div>
         </div>
         <div class="project-copy">
           <p>
-            Published research examining adversarial robustness in remote-sensing imagery.
-            The project developed my interest in model reliability, failure modes, and
-            rigorous evaluation under intentional perturbations.
+            Co-first-authored work on reconstructing continuous intracranial-pressure waveforms
+            from routinely acquired physiological signals. I share responsibility for methodology,
+            software, analysis, data curation, visualization, and manuscript preparation.
           </p>
           <ul>
-            <li>Designed experiments to measure adversarial vulnerability.</li>
-            <li>Compared model behavior across attack and evaluation settings.</li>
-            <li>Connected empirical robustness results to practical remote-sensing use cases.</li>
+            <li>Studied 158 adult patients and approximately 5,322 hours of waveform data.</li>
+            <li>Developed and evaluated LSTM, GRU, multiscale V-Net, TCN, and Transformer-based models using ABP, PPG, and ECG.</li>
+            <li>Evaluated early- and late-fusion strategies and waveform-aware training objectives.</li>
+            <li>Conducted independent cross-institutional validation from a 47-patient internal cohort to a 111-patient external cohort.</li>
+            <li>Built the physiological signal-processing pipeline to synchronize concurrent waveforms, construct 30-second prediction windows, and resample high-frequency signals to 125 Hz.</li>
+            <li>Developed automated signal-quality filtering for flatline, noisy, periodic, and physiologically implausible waveform segments.</li>
           </ul>
-          <a class="inline-link" href="publications.html">See publication →</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="project" id="domain-aware">
-      <div class="project-layout">
-        <div>
-          <p class="eyebrow">Optimization</p>
-          <h2>Domain-aware model selection and optimization</h2>
-        </div>
-        <div class="project-copy">
-          <p>
-            Ongoing empirical work exploring how optimization and hyperparameter selection
-            can account for performance variation across multiple source domains rather than
-            optimizing only a pooled average.
-          </p>
-          <ul>
-            <li>Compare source-domain-aware objective functions for model selection.</li>
-            <li>Study whether source-domain performance statistics predict unseen-domain robustness.</li>
-            <li>Evaluate optimization methods under distribution shift.</li>
-          </ul>
+          <div class="result-box">
+            <strong>External-validation performance:</strong>
+            Across five architectures, MAE ranged from 4.276–4.946 mmHg and Pearson correlation from 0.599–0.722.
+          </div>
+          <a class="inline-link" href="https://doi.org/10.64898/2026.06.07.26354958" target="_blank" rel="noopener">medRxiv / DOI →</a>
+          <a class="inline-link" href="https://github.com/veetzaveri/LCICM-ICP-Waveform-Generation" target="_blank" rel="noopener">Code →</a>
         </div>
       </div>
     </article>
@@ -116,20 +107,51 @@
     <article class="project" id="motion-planning">
       <div class="project-layout">
         <div>
-          <p class="eyebrow">Algorithms</p>
-          <h2>Motion planning and topology</h2>
+          <p class="eyebrow">Topology · Robotics</p>
+          <h2>A Motion Planning Algorithm in a Figure Eight Track</h2>
+          <div class="meta">
+            <span class="tag">Topology</span>
+            <span class="tag">Motion Planning</span>
+            <span class="tag">Algorithms</span>
+          </div>
         </div>
         <div class="project-copy">
           <p>
-            Research experience in topology-aware motion planning, with an emphasis on
-            algorithm design, experimental analysis, and reasoning about difficult search spaces.
+            Equal-contribution research applying configuration-space topology to collision-free
+            coordination of two robots moving on a figure-eight track.
           </p>
           <ul>
-            <li>Worked on a PUMP-related motion-planning research project.</li>
-            <li>Studied the relationship between topology and planning behavior.</li>
-            <li>Developed research habits that now inform my ML work: controlled experiments,
-                ablation-style reasoning, and careful interpretation of negative results.</li>
+            <li>Proved that the motion-planning problem has topological complexity 3.</li>
+            <li>Constructed an explicit algorithm with three continuous motion-planning instructions.</li>
+            <li>Used configuration-space topology to characterize instabilities in robotic motion-planning algorithms.</li>
+            <li>Published in the <em>PUMP Journal of Undergraduate Research</em> in 2023.</li>
           </ul>
+          <a class="inline-link" href="https://doi.org/10.46787/pump.v6i0.3559" target="_blank" rel="noopener">Publication / DOI →</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project" id="braille">
+      <div class="project-layout">
+        <div>
+          <p class="eyebrow">Hackathon · Embedded Systems</p>
+          <h2>Braille Display Reader</h2>
+          <div class="meta">
+            <span class="tag">Arduino</span>
+            <span class="tag">Python</span>
+            <span class="tag">MPU6050</span>
+          </div>
+        </div>
+        <div class="project-copy">
+          <p>
+            HopHacks 2022 project that placed in the top 5 out of 32 teams.
+          </p>
+          <ul>
+            <li>Built an Arduino-based Braille display capable of rendering characters from arbitrary text input.</li>
+            <li>Integrated an MPU6050 accelerometer with Python-based motion processing.</li>
+            <li>Used gesture detection to dynamically navigate characters displayed on the LED matrix.</li>
+          </ul>
+          <a class="inline-link" href="https://github.com/veetzaveri/HopHacks-Braille-Display-Reader" target="_blank" rel="noopener">Code →</a>
         </div>
       </div>
     </article>
@@ -141,13 +163,13 @@
 
 <footer class="footer">
   <div class="container footer-row">
-    <span>© 2026 Veet Zaveri</span>
+    <span>© 2026 Veet Zaveri · Alexandria, VA</span>
     <span>
-      <a href="https://github.com/YOUR_GITHUB_USERNAME">GitHub</a>
+      <a href="mailto:vzaveri1@jhu.edu">Email</a>
       ·
-      <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_SLUG/">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/veetzaveri/" target="_blank" rel="noopener">LinkedIn</a>
       ·
-      <a href="mailto:YOUR_EMAIL">Email</a>
+      <a href="https://github.com/veetzaveri" target="_blank" rel="noopener">GitHub</a>
     </span>
   </div>
 </footer>
