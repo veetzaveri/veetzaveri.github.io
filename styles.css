@@ -114,7 +114,7 @@ a { color: inherit; }
   font-weight: 750;
   border: 1px solid var(--line);
   background: var(--surface);
-  transition: transform .15s ease, box-shadow .15s ease;
+  color: var(--text);
 }
 
 .button.primary {
