@@ -152,6 +152,14 @@ a { color: inherit; }
   font-size: 1.05rem;
 }
 
+.engineering-heading {
+  grid-template-columns: 1fr 1fr;
+}
+
+.engineering-heading h2 {
+  white-space: nowrap;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -438,6 +446,10 @@ a { color: inherit; }
 
   .section-heading,
   .project-layout { grid-template-columns: 1fr; gap: 12px; }
+
+  .engineering-heading h2 {
+  white-space: normal;
+  }
 
   .card,
   .card.featured,
